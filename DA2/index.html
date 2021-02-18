@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Digital Assignment 2</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Asteroids Attack!</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+Asteroids are destroyed when you shoot them. There is a time limit to see just how many asteroids you can shoot.
+</li>
+
+<li><strong>Technical Merit:</strong>
+The ship points to wherever the pointer is. The asteroids also spawn offscreen and bounce on an offscreen boundary.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+What did you learn from this prototype?
+What was the easiest or hardest part of making it?
+<ul>
+<li>Learned how to apply sound effects, how to spawn in a bunch of moving objects, how to make the sprite point towards the pointer, and how to add a timer and text.</li>
+<li>Easiest part was getting everything loaded into the game. The hardest part was pretty much everything else lol.</li>
+</ul>
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Assets downloaded from <a href="https://mattwalkden.itch.io/lunar-battle-pack">here</a></li>
+<li>Sounds downloaded from <a href="https://maskedsound.itch.io/8-bit-sfx-pack">here</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+<ul>
+<li>Code for moving reticle on mouse and rotating sprite to face reticle obtained from <a href="http://phaser.io/examples/v3/view/games/top-down-shooter/topdownplayerfocus">here</a></li>
+<li>Code for spawning and moving asteroids obtained from <a href="http://phaser.io/examples/v3/view/physics/arcade/100-world-bodies">here</a></li>
+<li>Code for timer and clicking on asteroids obtained from <a href="http://phaser.io/examples/v3/view/events/listen-to-game-object-event">here</a></li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+Shoot as many asteroids as you can within the time limit.
+</li>
+
+<li><strong>Theme:</strong>
+Must be completed in 20 seconds.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+Top-down clicker. User clicks asteroids to gain points. Asteroids are spawned in randomly.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+Time constraints and improving scores.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+Want them to try to improve their scores each time they play.
+</li>
+
+<li><strong>Gameplay:</strong>
+There are only 20 seconds to click on as many asteroids as you can. The ship will follow the mouse pointer to be a little more immersive. When you click on an asteroid, an explosion sound is played, the asteroid is destroyed, and the score increases by one. The ship cannot move. Once the timer expires, you can no longer click on the asteroids.
+</li>
+
+<li><strong>Strategies:</strong>
+Clicking as fast as you can while also tracking the movements of the asteroids.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+Supposed to be abstract. Could be anyone on the ship trying to clear off the asteroids.
+</li>
+
+<li><strong>Target Audience:</strong>
+Kids-adults. Anyone with a desire to beat their top score.
+</li>
+
+<li><strong>Play Time:</strong>
+Exactly 20 seconds.
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
