@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Digital Assignment 5</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Swamp Man!</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+I created the level myself with assets downloaded from a source listed below. I used an app called "Tiled" that let me create cutsom levels using tilemaps.
+</li>
+
+<li><strong>Technical Merit:</strong>
+Using Tiled to make a custom level with a tilemap. Spawning in coins when there are none left. Adding bombs each time to increase difficulty.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned how to make a custom level with a tilemap.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Tiles, background, and coin asset from <a href="https://free-game-assets.itch.io/free-swamp-2d-tileset-pixel-art">here</a></li>
+<li>Player sprite and bomb asset from <a href="http://phaser.io/examples/v3/view/games/firstgame/part10">here</a></li>
+<li>Music from <a href="https://www.youtube.com/channel/UCPDLD_bjZyHCrrdlPOS6_gQ">here</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+<ul>
+<li>Iteration of DA1, made an actual game with an end condition, removed button and door, changed objective of game: <a href="https://penns87.github.io/cs325-game-prototypes/DA1/">here</a></li>
+<li>Code for respawning coins and adding bombs: <a href="http://phaser.io/examples/v3/view/games/firstgame/part10">here</a></li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+Swamp man (you) must collect as many coins as possible while avoiding the bombs that get in his way!
+</li>
+
+<li><strong>Theme:</strong>
+Things must be added as the game progresses, not removed
+</li>
+
+<li><strong>Mandated Variety:</strong>
+2d platformer. Random bomb spawns. Move with arrow keys. Increase score by collecting coins.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+Custom levels and random spawns
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+Want them to feel cautious as they try to navigate around the increasing bombs to get a better score.
+</li>
+
+<li><strong>Gameplay:</strong>
+The player moves with the arrow keys. Collecting coins will increase score by 1. Once all coins collected, more will spawn and a bomb will be randomly spawned. Hitting bombs will end the game. More bombs are added once all coins collected to increase difficulty.
+</li>
+
+<li><strong>Strategies:</strong>
+At first players will be fast to collect the coins, but will eventually slow down and carefully navigate around the bombs for better scores.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+Swamp Man lives in the swamp, and people start to invade his home. Swamp man steals their coins in retaliation, and the invaders are trying to stop him with bombs.
+</li>
+
+<li><strong>Target Audience:</strong>
+All ages
+</li>
+
+<li><strong>Play Time:</strong>
+Anywhere from a few seconds to a few minutes.
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
