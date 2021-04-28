@@ -75,10 +75,10 @@ class levelOne extends Phaser.Scene {
 
     this.physics.add.collider(this.ground, this.player);
 
-    this.bombs = this.physics.add.group();
-    this.physics.add.collider(this.bombs, this.level);
+    //this.bombs = this.physics.add.group();
+    //this.physics.add.collider(this.bombs, this.level);
 
-    this.physics.add.overlap(this.player, this.bombs, (x,y) => this.hitBomb(x,y));
+    //this.physics.add.overlap(this.player, this.bombs, (x,y) => this.hitBomb(x,y));
 
     this.spiketimer = this.time.addEvent({delay: Phaser.Math.Between(3000, 7000), callback:this.spawnSpike, callbackScope:this});
 
@@ -135,6 +135,7 @@ class levelOne extends Phaser.Scene {
       this.physics.add.overlap(this.player, spike, (x,y) => this.hitspikes(x,y));
       this.spiketimer = this.time.addEvent({delay: Phaser.Math.Between(3000, 5000), callback:this.spawnSpike, callbackScope:this});
     }
+
 }
 
 const game = new Phaser.Game({
